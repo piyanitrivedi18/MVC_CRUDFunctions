@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!Doctype html>
+<head>
+   
+    <link href="c:\users\anami\source\repos\day5-mvcdemos\day5-mvcdemos\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet" />
+    <link href="c:\users\anami\source\repos\day5-mvcdemos\day5-mvcdemos\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="c:\users\anami\source\repos\day5-mvcdemos\day5-mvcdemos\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" rel="stylesheet" />
+    <link href="c:\users\anami\source\repos\day5-mvcdemos\day5-mvcdemos\wwwroot\lib\bootstrap\dist\css\bootstrap.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    @Html.ActionLink("Home Page ", "Index", "Home")
+    @Html.ActionLink("About Us", "About", "Home")
+    @Html.ActionLink("Contact Us", "ContactUs", "Home")
+    @Html.ActionLink("Users List", "Index", "User")
+    @RenderBody();
+
+
+    @RenderSection("Scripts", false)
+    <footer> @@copyright 2024  </footer>
+</body>
